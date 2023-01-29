@@ -3,10 +3,14 @@
     margin: 0;
     padding: 5px;
     font-family: cursive;
+    font-weight: bold;
 }
 
 header h1{
-    font-size: 2rem;
+    font-size: 5rem;
+}
+main h1{
+    font-size: 2.5rem;
 }
 
 body {
@@ -62,8 +66,21 @@ form{
 }
 .neg_btn{
     background-color: gray;
-    font-weight: bold;
     padding:10px;
     border-radius: 10px;
-    transition: all .5s ease;
+}
+
+@media screen and (max-width: 767px){
+    #btn{
+        width: 10%;
+    }
+    body {
+        font-weight: lighter;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    main h1{
+        font-size:1.5rem;
+    }
 }
