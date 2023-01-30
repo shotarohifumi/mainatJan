@@ -1,19 +1,19 @@
 let data=JSON.parse(localStorage.getItem("key"));
 if (data) {
     for (const d of data) {
-        console.log(d);
+        // console.log(d);
         taskList(d);
     }
 }else{
     data=[];
 }
 let btn=document.getElementById("btn");
-console.log(btn);
+// console.log(btn);
 btn.addEventListener("click",function(){
     let input=document.querySelector("#input");
-    console.log(input);
+    // console.log(input);
     let task=input.value;
-    console.log(task);
+    // console.log(task);
     if (task!=="") {
         taskList(task);
         data.push(task);
@@ -32,11 +32,11 @@ function taskList(task){
     list.classList.add("list");
     list.textContent=task;
     let list_wrap=document.querySelector(".todo-list");
-    console.log(list_wrap);
+    // console.log(list_wrap);
     list_wrap.appendChild(list);
     input.value="";
     let deleteBtn=document.createElement("div");
-    console.log(deleteBtn);
+    // console.log(deleteBtn);
     deleteBtn.textContent="fuckit";
     deleteBtn.classList.add("delete");
     list.appendChild(deleteBtn);
