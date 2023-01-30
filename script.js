@@ -53,10 +53,11 @@ function taskList(task){
         list.style.textDecoration="line-through";
     })
     deleteBtn.addEventListener("mouseover",function(){
-        deleteBtn.classList.add("neg_btn");
+        deleteBtn.style.backgroundColor="gray";
+        // deleteBtn.classList.add("neg_btn");
         // console.log(negBtn);
     })
     deleteBtn.addEventListener("mouseleave",function(){
-        deleteBtn.classList.remove("neg_btn");
+        deleteBtn.style.backgroundColor="transparent";
     })
 }

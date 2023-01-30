@@ -64,11 +64,11 @@ form{
     margin-left: 10px;
     width: 5%;
 }
-.neg_btn{
+/* .neg_btn{
     background-color: gray;
     padding:10px;
-    border-radius: 10px;
-}
+    border-radius: 10%;
+} */
 
 @media screen and (max-width: 767px){
     #btn{
